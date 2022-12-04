@@ -111,6 +111,7 @@ const installBtn = document.getElementById("installBtn");
 window.addEventListener("beforeinstallprompt", (event) => {
   event.preventDefault();
   installBtn.style.visibility = "visible";
+  
   installBtn.addEventListener('click', () => {
     event.prompt();
     installBtn.setAttribute('disabled', true);
